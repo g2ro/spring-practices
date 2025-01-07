@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
 public class MyAspect {
 	
 	@Before("execution(public aop.domain.Product aop.service.ProductService.find(String) throws RuntimeException)")
-	public void adviceDefore() {
+	public void adviceBefore() {
 		System.out.println("-- Before Advice --");
 	}
 	
