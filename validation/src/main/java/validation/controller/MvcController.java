@@ -64,17 +64,11 @@ public class MvcController {
 	
 	@PostMapping("/ex02")
 	public String ex02(@ModelAttribute @Valid User user, BindingResult result, Model model) {
-
 		if(result.hasErrors()) {
-
 			Map<String, Object> map =  result.getModel();
-			model.addAllAttributes(map);
-			
-			
-			
+			model.addAllAttributes(map);	
 			return "form/ex02";
 		}
-		
 		return "redirect:/result";
 	}
 	
