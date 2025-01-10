@@ -8,31 +8,40 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>bean-wiring</artifactId>
-
+	
 	<properties>
 		<project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
 		<maven.compiler.source>21</maven.compiler.source>
 		<maven.compiler.target>21</maven.compiler.target>
 		<org.springframework-version>6.2.1</org.springframework-version>
 	</properties>
-
+	
 	<dependencies>
-		<!-- spring Context-->
+		<!-- spring context-->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
 			<version>${org.springframework-version}</version>
 		</dependency>
 
-		<!-- spring aspects-->
+		<!-- spring test-->
 		<dependency>
 			<groupId>org.springframework</groupId>
-			<artifactId>spring-aspects</artifactId>
+			<artifactId>spring-test</artifactId>
 			<version>${org.springframework-version}</version>
 		</dependency>
-	</dependencies>
 
+		<!-- junit jupiter -->
+		<dependency>
+		    <groupId>org.junit.jupiter</groupId>
+		    <artifactId>junit-jupiter-api</artifactId>
+		    <version>5.10.2</version>
+		    <scope>test</scope>
+		</dependency>
+
+	</dependencies>
+	
 	<build>
 		<finalName>bean-wiring</finalName>
-	</build>
+	</build>	
 </project>
