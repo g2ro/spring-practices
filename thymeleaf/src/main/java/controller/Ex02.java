@@ -64,6 +64,7 @@ public class Ex02 {
 		BeanDefinitionRegistry registry = (BeanDefinitionRegistry)applicationContext.getAutowireCapableBeanFactory();
 		registry.registerBeanDefinition("vo", beanDefinition);
 		
+		
 		return "ex02/01";
 	}
 }
